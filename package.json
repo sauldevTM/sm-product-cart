@@ -7,6 +7,11 @@
     "dist",
     "src"
   ],
+  "repository": {
+    "url": "https://github.com/sauldevTM/sm-product-cart",
+    "type": "git"
+  },
+  "homepage": "sauldev.netlify.app",
   "engines": {
     "node": ">=10"
   },
@@ -14,6 +19,7 @@
     "start": "tsdx watch",
     "build": "tsdx build",
     "test": "tsdx test --passWithNoTests",
+    "test:watch": "tsdx test --watch",
     "lint": "tsdx lint",
     "prepare": "tsdx build",
     "size": "size-limit",
@@ -52,12 +58,33 @@
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
     "husky": "^8.0.3",
+    "identity-obj-proxy": "^3.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "rollup-plugin-postcss": "^4.0.2",
     "size-limit": "^8.2.6",
     "tsdx": "^0.14.1",
     "tslib": "^2.6.0",
-    "typescript": "^3.9.10"
+    "typescript": "^3.9.10",
+    "react-test-renderer": "^18.2.0",
+    "@babel/preset-env": "^7.22.9",
+    "babel-jest": "^29.6.1",
+    "jest": "^25.5.4",
+    "@types/react-test-renderer": "^18.0.0",
+    "@babel/preset-react": "^7.22.5"
+  },
+  "keywords": [
+    "product",
+    "card",
+    "saulDev",
+    "sauldevTM"
+  ],
+  "dependencies": {
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "identity-obj-proxy",
+      "\\.(css|less|scss|sass)$": "identity-obj-proxy"
+    }
   }
 }

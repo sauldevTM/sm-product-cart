@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProductTitle Must display the custom title of product component 1`] = `
+<span
+  className="productDescription undefined"
+>
+  Custom Title
+</span>
+`;
+
+exports[`ProductTitle Must display the default title of product component 1`] = `
+<div
+  className="productCard undefined"
+>
+  <span
+    className="productDescription undefined"
+  >
+    Coffee Mug without image
+  </span>
+</div>
+`;
